@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score-display {
+    /* font-size: 35px; */
+    font-weight: bold;
+    color: #00ffcc;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* #score-display:hover {
+    font-size: 100px;
+    transition: font-size 200ms;
+} */
+
+.main-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    /* width:px; */
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 200, 255, 0.6);
+}
+
+.main-btn:active {
+    transform: scale(0.98);
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0f0f2e;
+    /* темний фон */
+    z-index: -1;
+}
+#score-display {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px; /* базовий розмір */
+    text-align: center;
+    display: block;
+    margin: 0px;
+    transition: font-size 0.3s ease-in-out; /* плавна зміна розміру шрифту */
+}
+#score-display-cont {
+    height: 150px;
+    vertical-align: top;
+}
+
+
+
+#score-display:hover {
+    font-size: 100px;
+    transition: font-size 200ms;
+}
+
+.score-pop {
+    animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
